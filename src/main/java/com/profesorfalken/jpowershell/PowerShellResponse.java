@@ -27,7 +27,7 @@ public class PowerShellResponse {
     private final String commandOutput;
     private final boolean timeout;
 
-    PowerShellResponse(boolean isError, String commandOutput, boolean timeout) {
+    public PowerShellResponse(boolean isError, String commandOutput, boolean timeout) {
         this.error = isError;
         this.commandOutput = commandOutput;
         this.timeout = timeout;
